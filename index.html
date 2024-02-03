@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <font size="200"color="white" face="Arial" >Stopwatch</font><br><br><br>
+    <div id="stopwatch">00 H:00 M:00 S 000ms</div>
+    <button id="controlBtn" onclick="toggleStopwatch()">
+            <img id="controlImg" src="start-removebg-preview.png" alt="Start">  
+    </button>
+    <button id="recordBtn" onclick="record()" disabled>Record Lapse</button>
+    <button id="resetBtn" onclick="reset()">Reset</button><br><br><br>
+    <font size="100px" color="white" face="impact">LAPS</font>
+    <div id="lapsContainer">
+        <ul id="lapsList"></ul>
+    </div>
+
+</body>
+</html>
